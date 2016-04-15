@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'KonturIconiceco';
+    src: url('fonts/KonturIconiceco.eot');
+    src: url('fonts/KonturIconiceco.eot') format('embedded-opentype'),
+         url('fonts/KonturIconiceco.woff2') format('woff2'),
+         url('fonts/KonturIconiceco.woff') format('woff'),
+         url('fonts/KonturIconiceco.ttf') format('truetype'),
+         url('fonts/KonturIconiceco.svg#KonturIconiceco') format('svg');
+}
