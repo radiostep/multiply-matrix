@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'KonturIconiceco';
+    src: url('../fonts/KonturIconiceco.eot');
+    src: url('../fonts/KonturIconiceco.eot') format('embedded-opentype'),
+         url('../fonts/KonturIconiceco.woff2') format('woff2'),
+         url('../fonts/KonturIconiceco.woff') format('woff'),
+         url('../fonts/KonturIconiceco.ttf') format('truetype'),
+         url('../fonts/KonturIconiceco.svg#KonturIconiceco') format('svg');
+}
+
+@font-face {
+    font-family: "Segoe UI", "Segoe UI Web", "Helvetica Neue", "BBAlpha Sans", "S60 Sans", Arial, "sans-serif";
+    src: url(../fonts/Segoe UI.ttf);
+}
+   
+html, body, .row {
+	height: 100%;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+   
+*, :befoer, :after {
+	
+  box-sizing: border-box;
+}
+
+* {
+	font-family: 'Segoe UI';
+	font-size: 14px;
+}
+
+#content {
+	margin-left: 333px;
+	display: block;
+	
+}
+
+.black-text {
+	color: #000!important;
+}
+
+.wrapper {
+	background: linear-gradient(to right, #bcbcbc, #bcbcbc 333px, #fff 333px, #fff);
+}
+
+#aside{
+	background-color: #bcbcbc;
+	height: 100%;
+}
+
+.left-col{
+	float: left;
+	width: 333px;
+	padding: 0;
+	margin: 0;
+	
+}
+
+button{
+	margin-bottom: 10px;
+	padding: 2px 6px 4px 3px;
+	border-radius: 2px;
+	border: 1px solid #d9d9d9;
+	border-bottom-color: #b2b2b2;
+	margin-left: 2px;
+	background: linear-gradient(to top, #ececec, #fefefe );
+}
+
+button:hover {
+	background: linear-gradient(to top, #dfdfdf, #f2f2f2 );
+}
+
+button:active {
+	background: linear-gradient(to top, #d9d9d9, #d9d9d9 );
+	background-color: #d9d9d9;
+	box-shadow: inset 0px 2px 2px -1px rgba(0,0,0,.15);
+}
+
+i {
+	padding-right: 3px;
+}
+
+.group-btn-calculate{
+	margin:31px 35px;
+}
+
+.group-1, .group-2 {
+	margin: 46px 32px;
+}
+
+.group-2 button{
+	margin-bottom: 0;
+	
+}
+
+.group-2 table{
+	border-collapse: collapse;
+}
+
+.group-2 td {
+	padding: 0px 9px 10px 0px;
+}
+
+.gr-radio{
+	padding: 8px 0;
+}
+
+.gr-pm-btns {
+	margin-top: 4px;
+}
+
+.gr-radio input[type=radio] {
+	margin: 1px 1px;
+	width: 1.24em;
+    height: 1.24em;
+	vertical-align: middle;
+}
+
+.lable {
+	vertical-align: middle;
+	margin-right: 14px;
+	padding-left: 4px;
+}
+
+.btn-calculate {
+    height: 2.6em;
+	line-height: 2em;
+	padding: 0em 0.9em 0.1em 1em;
+	background: transparent linear-gradient(to top, #38920C, #4BA91D) repeat scroll 0% 0%;
+	border-width: 1px medium 1px 1px;
+	border-style: solid none solid solid;
+	border-color: #37662B;
+	position: relative;
+	margin-right: 1.5em;
+	border-radius: 3px 2px 2px 3px;
+	color: #FFF;
+	font-size: 1.1em;
+	letter-spacing: 0.3px;
+	margin-left: 0;
+}
+
+.btn-calculate:after {
+    content: "";
+    width: 1.36em;
+    height: 1.26em;
+    position: absolute;
+    background: inherit;
+    background: linear-gradient(to top left, #38920c, #4ba91d);
+    top: 0;
+    bottom: 0;
+    right: -0.67em;
+    margin: auto;
+    border: 1px solid #37662b;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(59.5deg) skewX(36grad);
+    z-index: 1;
+    border-radius: 2px 3px 2px 26px;
+}
+
+
+
+.btn-calculate:focus {
+	box-shadow: 0 0 0 1px #5199db;
+/*	border-color: #fff;*/
+	outline: none;
+}
+
+.btn-calculate:focus:after {
+	box-shadow: 1px -1px 0 0 #5199db;
+/*	border-color: #fff;*/
+	outline: none;
+}
+
+.btn-calculate:hover {
+	background: linear-gradient(to top, #317e0b, #3b8d13);
+}
+
+.btn-calculate:hover:after {
+	background: linear-gradient(to top left, #317e0b, #3b8d13);
+}
+
+.btn-calculate:active {
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.3);
+	background: linear-gradient(to top, #317e0b, #3b8d13);
+	border-color: #37662b;
+}
+
+.btn-calculate:active:after {
+	box-shadow: inset -1px 1px 2px rgba(0,0,0,0.2);
+	background: linear-gradient(to top left, #317e0b, #3b8d13);
+	border-color: #37662b;
+}
+
+.matrixs-table {
+	padding: 0 20px;
+	border-spacing: 0px;
+}
+
+.matrixs-table tbody tr:first-child td{
+	padding-bottom: 23px;
+	line-height: 2em;
+}
+
+.matrixs-table td {
+	padding: 13px 18px 7px;
+	text-align: center;
+    vertical-align: bottom;
+}
+
+.matrixs-table td td {
+	padding: 0!important;
+}
+
+.matrix {
+	border-spacing: 9px 10px;
+	margin: 0 -10px;
+}
+
+.matrix td {
+	height: 38px;
+	width: 38px;
+	border: 1px solid #d9d9d9;
+	background-color: #f2f2f2;
+	color: #c9c9c9;
+	padding: 0!important;
+}
+
+.matrixs-table td .left-bracket {
+    border: solid;
+    border-width: 2px 0 2px 2px;
+    border-color: #000;
+	padding: 4px!important;
+}
+
+.matrixs-table td .right-bracket {
+    border: solid;
+    border-width: 2px 2px 2px 0;
+    border-color: #000;
+	padding: 4px!important;
+}
+
+.matrix-name{
+	font-size: 2em;
+    text-align: center;
+    vertical-align: middle!important;
+	padding: 0 0 13px 0!important;
+}
+
+.matrix input[type=number]{
+	line-height: 2em;
+	width:28px;
+	height: 28px;
+	padding: 10px 5px 0px;
+	box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05);
+	border-top: 1px solid #b2b2b2;
+	border-right: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+button:focus, input:focus{
+	outline: solid 2px #5199db;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.matrix input::-webkit-input-placeholder {
+	color: #d4d4d4;
+}
+.matrix input::-moz-placeholder {
+	color: #d4d4d4;
+}
+.matrix:-ms-input-placeholder {
+	color: #d4d4d4;
+}
+
+#matrix-a-input td, #matrix-b-input td {
+	border: none;
+}
+
+.icon {
+	display: inline-block;
+	font: normal normal normal 14px/1 KonturIconiceco;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.kontur-plus:before {
+  content: "\e00d";
+}
+
+.kontur-minus:before {
+	content: "\e01e";
+}
+
+.kontur-clear:before {
+	content: "\e012";
+}
+
+.kontur-replace:before {
+	content: "\e01f";
+}
+
+.blue-bg {
+	background-color: #5199db!important;
+}
+
+.blue-bg-aside {
+	background: linear-gradient(to right, #5199db, #5199db 333px, #fff 333px, #fff)!important;
+}
+
+.red-bg {
+	background-color: #f6c1c0!important;
+}
+
+.red-bg-aside {
+	background: linear-gradient(to right, #f6c1c0, #f6c1c0 333px, #fff 333px, #fff)!important;
+}
+.alert {
+	color: #da0902;
+	padding: 0 35px;
+}
