@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SKB Kontur test task</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div>
+	
+	<div class="wrapper" id="wrapper">
+		<aside class="col-md-4 left-col" id="aside">
+			<div class="group-btn-calculate">
+				<button onclick="resultOutput();return false;"  class="btn-calculate">Умножить матрицы</button>
+			</div>
+			<div class="group-1">
+				<button onclick="clearAll();return false;"><i class="icon kontur-clear"></i>Очистить матрицы</button>
+				<button onclick="replaceAB();return false;"><i class="icon kontur-replace"></i>Поменять матрицы местами</button>
+			</div>
+			<div class="group-2">
+				<div class="gr-radio">
+					<label><input id="matrixARadioBtn" type="radio" name="matrix"><span class="lable">Матрица A</span></label>
+					<label><input id="matrixBRadioBtn" type="radio" name="matrix"><span class="lable">Матрица B</span></label>
+				</div>
+				<div class="gr-pm-btns">
+					<table>
+						<tbody>
+							<tr>
+								<td><button onclick="clickPlusMinus('plus', 'row');return false;"><i class="icon kontur-plus"></i>Добавить</button></td>
+								<td><button onclick="clickPlusMinus('minus', 'row');return false;"><i class="icon kontur-minus"></i>Удалить</button></td>
+								<td>cтроку</td>
+							</tr>
+							<tr>
+								<td><button onclick="clickPlusMinus('plus', 'cell');return false;"><i class="icon kontur-plus"></i>Добавить</button></td>
+								<td><button onclick="clickPlusMinus('minus', 'cell');return false;"><i class="icon kontur-minus"></i>Удалить</button></td>
+								<td>cтолбец</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div id="alert"></div>
+		</aside>
+		<content id="content">
+			<table class="matrixs-table">
+				<tbody>
+					<tr>
+						<td>
+							<table>
+								<tbody>
+									<td class="left-bracket"></td>
+									<td id="matrix-c">
+										<table class="matrix" id="matrix-calculate">
+											<tbody>
+												<tr>
+													<td id="c1.1">c1.1</td>
+													<td id="c1.2">c1.2</td>
+													<td id="c1.3">c1.3</td>
+												</tr>
+												<tr>
+													<td id="c2.1">c2.1</td>
+													<td id="c2.2">c2.2</td>
+													<td id="c2.3">c2.3</td>
+												</tr>
+												<tr>
+													<td id="c3.1">c3.1</td>
+													<td id="c3.2">c3.2</td>
+													<td id="c3.3">c3.3</td>
+												</tr>
+												<tr>
+													<td id="c4.1">c4.1</td>
+													<td id="c4.2">c4.2</td>
+													<td id="c4.3">c4.3</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td class="right-bracket"></td>
+								</tbody>
+							</table>
+						</td>
+						<td>
+							<table>
+								<td class="left-bracket"></td>
+								<td id="matrix-a">
+									<table class="matrix" id="matrix-a-input">
+										<tbody>
+											<tr>
+												<td><input type="number" placeholder="a1.1"></td>
+												<td><input type="number" placeholder="a1.2"></td>
+											</tr>
+											<tr>
+												<td><input type="number" placeholder="a2.1"></td>
+												<td><input type="number" placeholder="a2.2"></td>
+											</tr>
+											<tr>
+												<td><input type="number" placeholder="a3.1"></td>
+												<td><input type="number" placeholder="a3.2"></td>
+											</tr>
+											<tr>
+												<td><input type="number" placeholder="a4.1"></td>
+												<td><input type="number" placeholder="a4.2"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="right-bracket"></td>
+							</table>
+						</td>
+						<td class="matrix-name">A</td>
+					</tr>
+					<tr>
+						<td>
+							<table>
+								<td class="left-bracket"></td>
+								<td id="matrix-b">
+									<table  class="matrix" id="matrix-b-input">
+										<tbody>
+											<tr>
+												<td><input type="number" placeholder="b1.1"></td>
+												<td><input type="number" placeholder="b1.2"></td>
+												<td><input type="number" placeholder="b1.3"></td>
+											</tr>
+											<tr>
+												<td><input type="number" placeholder="b2.1"></td>
+												<td><input type="number" placeholder="b2.2"></td>
+												<td><input type="number" placeholder="b2.3"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="right-bracket"></td>
+							</table>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="matrix-name">B</td>
+					</tr>
+				</tbody>
+			</table>
+		</content>
+	</div>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
