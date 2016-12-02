@@ -306,7 +306,6 @@ function replaceAB() { //Замена матриц местами
 
 	var cellsCLen = document.getElementById('matrix-calculate').rows[0].cells.length,
 		cellsBLen = document.getElementById('matrix-b-input').rows[0].cells.length;
-		console.log(cellsCLen +' и '+cellsBLen);
 	if (cellsCLen < cellsBLen) {
 		for (var i = 0; i < (cellsBLen - cellsCLen); i++) {
 			add2(tableC.parentNode);
